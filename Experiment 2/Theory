@@ -1,0 +1,22 @@
+Command                                                                            Use
+
+jobs	                                                 Displays the list of active jobs running in the current shell.
+sleep 100	                                             Pauses execution for 100 seconds.
+sleep 300 &	                                           Runs a sleep process of 300 seconds in the background.
+kill %2	                                               Terminates the job with job number 2.
+kill %3	                                               Terminates the job with job number 3.
+sleep 5	                                               Pauses execution for 5 seconds.
+bg	                                                   Resumes a suspended job in the background.
+fg	                                                   Brings a background or suspended job to the foreground.
+ps	                                                   Displays processes running in the current terminal.
+ps -e	                                                 Displays all running processes.
+ps -ef	                                               Displays all processes in full-format listing.
+ps aux	                                               Displays detailed information about all running processes.
+kill -15 7263	                                         Sends SIGTERM to process ID 7263 for graceful termination.
+kill -9 7274	                                         Sends SIGKILL to forcefully terminate process ID 7274.
+kill -STOP 7279	                                       Suspends process ID 7279.
+ps -o pid, ni, cmd	                                   Displays selected process information: process ID, nice value and command.
+nice -n 10 sleep 300 &	                               Runs a background process with a nice value of 10.
+sudo nice -n -10 sleep 300 &	                         Runs a background process with a nice value of -10 using administrator privileges.
+renice 10 -p 7316	                                     Changes the nice value of process ID 7316 to 10.
+top	                                                   Displays real-time information about running processes and system resource usage.
