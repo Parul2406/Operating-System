@@ -1,0 +1,40 @@
+1. Basic directory commands - 
+pwd
+ls
+ls -l
+ls -la
+ls -lh
+ls -lah
+cd CSE
+cd ..
+
+
+2. File creation and operations
+touch File1.txt File2.txt
+cat > File1.txt
+cat >> File1.txt
+cat File1.txt
+grep "operating" File1.txt
+ls | grep "File1"
+cp File1.txt File2.txt
+cat File2.txt
+mv File1.txt File3.txt
+cat File3.txt
+
+
+3. Pipe and sorting commands
+cat File1.txt | sort | head -n 3
+cat File1.txt | sort | tail -n 3
+
+
+4. Remove commands
+rm File1.txt error.txt
+
+
+
+
+
+
+
+
+
