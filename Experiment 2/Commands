@@ -1,0 +1,20 @@
+jobs
+sleep 100
+sleep 300 &
+kill %2
+kill %3
+sleep 5
+bg
+fg
+ps
+ps -e
+ps -ef
+ps aux
+kill -15 7263
+kill -9 7274
+kill -STOP 7279
+ps -o pid, ni, cmd
+nice -n 10 sleep 300 &
+sudo nice -n -10 sleep 300 &
+renice 10 -p 7316
+top
