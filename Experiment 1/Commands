@@ -1,1 +1,22 @@
-
+pwd
+ls
+ls -l
+ls -la
+ls -lh
+ls -lah
+mkdir
+cd
+cd..
+echo "message"
+touch File1.txt
+cat > file.txt
+cat >> file.txt
+cat file.txt
+cat < file.txt
+cat File1.txt | sort | head -n 3
+cat File1.txt | sort | tail -n 3
+grep "operating" File1.txt
+cp File1.txt File2.txt
+mv File1.txt File3.txt
+rm File1.txt error.txt
+rmdir directory
