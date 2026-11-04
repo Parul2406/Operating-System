@@ -1,0 +1,19 @@
+Linux terminal commands - 
+
+nano upper_file.sh
+chmod +x upeer_file.sh
+./upper_file.sh Names.txt
+ls
+
+
+
+Shell Script - 
+
+#!/bin/bash
+if[ -f "$1" ]
+then
+    mv "$1" "$(echo "$1" | tr '[:lower:]' '[:upper:]')"
+    echo "File name changed to Upper Case"
+else
+    echo "$1 does not exist"
+fi
