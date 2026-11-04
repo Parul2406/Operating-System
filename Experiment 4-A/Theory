@@ -1,0 +1,19 @@
+who – Used to display the list of currently logged-in users.
+
+read -p – Used to prompt the user to enter a username.
+
+awk – Used to search for the entered username and extract its login time.
+
+if [ -z "$login_time" ] – Used to check whether the login time is empty, indicating that the user is not currently logged in.
+
+date -d "$login_time" +%s – Used to convert the login time into seconds (Unix timestamp).
+
+date +%s – Used to get the current time in seconds.
+
+total_seconds=$((current_seconds - login_seconds)) – Used to calculate the total working time in seconds.
+
+hours=$((total_seconds / 3600)) – Used to convert total seconds into hours.
+
+minutes=$(((total_seconds % 3600) / 60)) – Used to calculate the remaining time in minutes.
+
+echo – Used to display the login time and total working time of the user
