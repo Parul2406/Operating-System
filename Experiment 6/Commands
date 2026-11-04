@@ -9,7 +9,7 @@ top
 
 
 
-Shell Script - 
+Contents of exp6.c - 
 
 #include <stdio.h>
 #include <stdlib.h>
