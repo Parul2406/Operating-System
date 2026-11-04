@@ -1,0 +1,63 @@
+(A)
+Bash Commands - 
+
+nano exp7a.c
+gcc exp7a.c -o exp7a
+./exp7a
+pgrep -a exp7a
+top -p 11013
+
+
+
+Shell Script -
+
+#include <stdio.h>
+
+int main() {
+    long long counter = 0;
+
+    while (1) {
+        counter++;
+        if (counter % 100000000 == 0) {
+            printf("CPU task running: %lld\n", counter);
+        }
+    }
+    return 0;
+}
+
+(B)
+Bash Commands - 
+
+nano exp7b.c
+pgrep -a exp7b
+top -p 11053
+
+
+
+Shell Script -
+
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+    FILE *fp;
+    printf("Starting I/O task...\n");
+
+    while (1) {
+        fp = fopen("dummy.txt", "w");
+        if (fp != NULL) {
+            fprintf(fp, "Writing disk data\n");
+            fclose(fp);
+            printf("File operation done\n");
+        }
+        sleep(1);
+    }
+    return 0;
+}
+
+
+(C)
+Bash commands - 
+
+pgrep -a exp7a
+pmap -x 10988
