@@ -1,0 +1,17 @@
+w
+date
+date > os.txt
+w >> os.txt
+cat os.txt
+cat > Names.txt
+sed -n '$p' Names.txt
+sed -n '2p' Names.txt
+sed '1d' Names.txt
+sed -n '2,6p' Names.txt
+sed 's/Sharma/Verma/' Names.txt
+sed '2s/Sharma/Verma/' Names.txt
+sed -n 'p' Names.txt
+sed 's/[^ ]*/XYZ/' Names.txt
+sed 's/\([^ ]*\)/{\1}/' Names.txt
+sed 's/\([^ ]*\)/\1/' Names.txt
+sed 's/^\([^ ]*\) \([^ ]*\)/\2 \1/' Names.txt
