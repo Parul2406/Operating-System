@@ -1,0 +1,23 @@
+$# – Used to count the total number of command-line arguments passed to the script.
+
+-ne – Used to check whether two numbers are not equal.
+
+echo – Used to display the usage message on the terminal.
+
+$0 – Represents the name of the shell script.
+
+$1 – Represents the first command-line argument (filename).
+
+$2 – Represents the second command-line argument (starting line number).
+
+$3 – Represents the third command-line argument (ending line number).
+
+sed -n – Used to print only the specified lines of a file.
+
+"${start},${end}p" – Specifies the starting and ending line numbers to be displayed.
+
+"$file" – Represents the filename stored in the variable.
+
+if and then – Used to execute commands based on a condition.
+
+fi – Used to mark the end of the if statement.
