@@ -1,0 +1,16 @@
+
+-lt – Used to check whether one number is less than another number.
+
+shift – Used to remove the first argument and shift the remaining arguments to the left.
+
+for file in "$@" – Used to execute the loop for each remaining file argument.
+
+-f – File test operator used to check whether a file exists and is a regular file.
+
+sed -i – Used to edit the file in-place by overwriting the original file with the changes.
+
+"/$word/d" – Used to search for the specified word and delete the entire line containing it.
+
+"$file" – Represents the filename stored in the variable.
+
+done – Used to mark the end of the for loop.
