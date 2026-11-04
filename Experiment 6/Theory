@@ -1,0 +1,27 @@
+gcc exp6.c -o exp6 - compiles the C source file into an executable named exp6.
+
+free - displays total, used, free, shared, buff/cache and available memory in kilobytes.
+
+free -h - shows the same memory information in human-readable units like Mi and Gi.
+
+watch -n 1 free -h - repeats the free -h command every 1 second so memory changes can be observed live.
+
+top - shows a live view of running processes with their PID, CPU usage, memory usage (VIRT, RES, SHR, %MEM) and system summary.
+
+./exp6 500 - runs the program with 500 MB as the argument.
+
+argc and argv - argc counts the command-line arguments and argv holds them, so argv[1] is the memory size given by the user.
+
+atoi() - converts the string argument into an integer.
+
+malloc() - allocates a block of memory from the heap and returns NULL if it fails.
+
+memory[i] = 1 with i += 4096 - writes to one byte in every 4096-byte page so the OS actually assigns physical memory to the program.
+
+sleep(1) - pauses the program for 1 second so the loop does not use CPU while the memory stays allocated.
+
+while (1) - keeps the program running so its memory usage can be observed until Ctrl+C is pressed.
+
+#include <stdlib.h> - provides malloc() and atoi().
+
+#include <unistd.h> - provides sleep().
