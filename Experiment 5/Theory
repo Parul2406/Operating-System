@@ -1,0 +1,17 @@
+./filename - runs a program or script from the current directory.
+
+time - runs a command and reports its real, user and sys execution time.
+
+read - takes input from the user and stores it in a variable.
+
+${str:pos:len} - extracts a substring of length len starting at position pos.
+
+${#str} - gives the length of the string.
+
+gcc file.c -o name - compiles a C source file into an executable with the given name.
+
+#include <stdio.h> - adds the standard input/output library for printf and scanf.
+
+#include <string.h> - adds the string library for functions like strlen().
+
+strlen() - returns the length of a string.
