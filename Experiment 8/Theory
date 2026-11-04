@@ -1,0 +1,15 @@
+pgrep -a - searches running processes by name and prints the PID along with the full command line.
+
+pmap -x PID - displays the memory map of a process with extended details like size, resident memory and dirty pages.
+
+Address - the starting virtual address of each memory region.
+
+Kbytes - the size of the region in virtual memory.
+
+RSS - the part of the region currently in physical RAM (resident set size).
+
+Dirty - the part of the region that has been modified since it was loaded.
+
+Mode - the permissions of the region, where r is read, w is write, x is execute and - means not allowed.
+
+Mapping - what the region belongs to, such as the program file, a library, or anonymous memory.
