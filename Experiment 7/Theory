@@ -1,0 +1,21 @@
+long long counter - a 64-bit integer that holds the very large loop count without overflowing.
+
+while (1) with counter++ - keeps the CPU busy continuously, making exp7a a CPU-bound process.
+
+counter % 100000000 == 0 - prints a message only once every 100 million iterations, so the time goes to calculation instead of printing.
+
+%lld - the printf format specifier for a long long value.
+
+fopen(“dummy.txt”, “w”) - opens the file for writing, creating it if it does not exist and emptying it if it does.
+
+fprintf() - writes formatted text into a file instead of the screen.
+
+fclose() - closes the file and flushes the data to disk.
+
+sleep(1) - makes exp7b wait 1 second after each file operation, so it spends most of its time waiting, making it an I/O-bound process.
+
+pgrep -a name - finds the PID of a running process by name and shows its full command.
+
+top -p PID - shows a live view of only the given process, with its CPU usage, memory usage, state and run time.
+
+#include <unistd.h> - provides sleep().
