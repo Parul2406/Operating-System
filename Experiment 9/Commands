@@ -1,0 +1,29 @@
+Bash Commands- 
+
+nano main.c
+gcc main.c -o main
+./main
+
+
+Contents of main.c - 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+int main() {
+    pid_t p = fork();
+    if (p = 0) {
+        printf("Child Running with PID: %d\n", getpid());
+        sleep(2);
+        printf("Child Existing...\n");
+        exit(0);
+    }
+    else {
+        printf("Parent Waiting for child to terminate...\n");
+        pid_t terminated_pid = wait(NULL);
+        printf("Parent Terminated Child PID: %d\n", terminated_pid);
+    }
+    return 0;
+}
