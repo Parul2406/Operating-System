@@ -1,0 +1,4 @@
+Bash Commands - 
+
+pgrep -a exp7a
+pmap -x 10988
