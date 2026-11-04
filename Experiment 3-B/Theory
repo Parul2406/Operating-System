@@ -1,0 +1,18 @@
+tr '[:lower:]' '[:upper:]' – Used to convert lowercase letters into uppercase letters.
+
+"$@" – Used to pass all command-line arguments to the shell script.
+
+mv "$1" "$(echo "$1" | tr '[:lower:]' '[:upper:]')" – Used to rename a file by converting its filename from lowercase to uppercase.
+
+if [ -f "$1" ] – Used to check whether the given file exists.
+
+cat "$1" | tr '[:lower:]' '[:upper:]' – Used to read the contents of a file and convert all lowercase letters into uppercase letters.
+
+cat > temp.txt – Used to create a temporary file and store the converted output in it.
+
+echo – Used to display messages on the terminal.
+
+chmod +x upper_file.sh – Used to give execute permission to the shell script.
+
+nano upper_file.sh – Used to create or edit the shell script using the Nano text editor.
+
