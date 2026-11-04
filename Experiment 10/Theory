@@ -1,0 +1,15 @@
+[1] 6252 - the shell’s job number and the PID of the background process.
+
+getpid() - returns the PID of the process that calls it.
+
+&var - gives the address of the variable var, which is a virtual address, not a physical one.
+
+%p - the printf format specifier used to print a pointer address.
+
+(void*) - casts the address to a generic pointer type, as %p expects.
+
+fflush(stdout) - forces the output to be printed immediately instead of staying in the buffer, which matters when the output is not going straight to a terminal.
+
+sleep(1) inside while(1) - keeps the process alive without using CPU so its address can be observed.
+
+kill PID - stops a background process.
