@@ -1,0 +1,19 @@
+fork() - creates a new child process that is a copy of the calling parent process, returning 0 to the child and the child’s PID to the parent.
+
+pid_t - the data type used to store process IDs.
+
+getpid() - returns the PID of the process that calls it.
+
+sleep(2) - pauses the process for 2 seconds.
+
+exit(0) - terminates the process with status 0, meaning success.
+
+wait(NULL) - makes the parent wait until a child terminates, then returns that child’s PID, or -1 if there is no child or an error occurs.
+
+p == 0 - the check used to run the child’s code, since fork() returns 0 only in the child.
+
+#include <sys/wait.h> - provides wait().
+
+#include <unistd.h> - provides fork(), getpid() and sleep().
+
+#include <stdlib.h> - provides exit().
