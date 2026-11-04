@@ -1,0 +1,23 @@
+Linux terminal commands - 
+
+cat numbers.txt
+nano exp4b.sh
+chmod +x exp4b.sh
+./exp4b.sh numbers.txt 2 7
+
+
+
+
+Shell Script - 
+
+#!/bin/bash
+
+if[ "$#" -ne 3 ]
+then
+    echo "Usage: $0 filename start_line end_line"
+fi
+
+file= "$1"
+start= "$2"
+end= "$3"
+sed -n "${start},${end}p"  "$file"
