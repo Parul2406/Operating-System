@@ -1,0 +1,17 @@
+nano comp.sh: Used to create or edit a shell script file named comp.sh.
+
+#!/bin/bash: It is called the shebang. It specifies Bash as the interpreter to execute the shell script.
+
+Command Line Argument ($1): It stores the first argument passed to the shell script during execution.
+
+$#: It is used to display the total number of command-line arguments passed to the shell script.
+
+-f "$1": It checks whether the given argument is an existing regular file.
+
+-d "$1": It checks whether the given argument is an existing directory.
+
+echo: It is used to display messages or output on the terminal.
+
+chmod +x comp.sh: It provides executable permission to the shell script.
+
+./comp.sh Names.txt: It executes the shell script by passing Names.txt as a command-line argument. The script checks whether the given name is a file, directory, or does not exist.
